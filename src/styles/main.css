@@ -1,5 +1,25 @@
 @tailwind base;
 
-@tailwind components;
-
 @tailwind utilities;
+
+.top-bar {
+  @apply fixed w-full flex bg-gray-300;
+  height: 60px;
+}
+
+.app-container {
+  @apply flex w-full;
+  padding-top: 60px;
+}
+
+.sidebar {
+  @apply flex-grow-0 bg-gray-400;
+  width: 256px;
+  min-height: calc(100vh - 60px);
+  max-height: 1100px;
+}
+
+.content-section {
+  @apply flex-grow bg-gray-500;
+  min-height: calc(100vh - 60px);
+}
