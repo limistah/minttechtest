@@ -1,21 +1,62 @@
 .top-bar {
   position: fixed;
+  display: flex;
   width: 100%;
   display: flex;
   background-color: #f7fafc;
   height: 60px;
 }
 
-.app-logo {
+.top-bar-container {
+  width: 100%;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+}
+
+.app-logo {
+  flex-grow: 0;
   font-size: 1.875rem;
   font-weight: 700;
-  margin-top: auto;
-  margin-bottom: auto;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   text-align: center;
   color: #1875f0;
-  width: 256px;
+  width: 317px;
+}
+
+.app-searchbar {
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  position: relative;
+}
+
+.app-searchbar-icon {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  left: 2px;
+  top: 25px;
+}
+
+.app-searchbar-input {
+  border-width: 0;
+  width: 100%;
+  color: #a0aec0;
+  padding-left: 15px;
+  background-color: transparent;
+  font-size: 13px;
+}
+
+.app-searchbar-input:hover,
+.app-searchbar-input:focus {
+  border-width: 0;
+  border-bottom-width: 1px;
+  border-color: #90cdf4;
+  outline: 0px;
 }
 
 .app-container {
