@@ -4,7 +4,7 @@ function Logo() {
   return (
     <form className="app-searchbar">
       <svg
-        className=".app-searchbar-icon"
+        className="app-searchbar-icon"
         width="12"
         height="12"
         viewBox="0 0 12 12"
