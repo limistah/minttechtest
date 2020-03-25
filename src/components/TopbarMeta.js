@@ -12,8 +12,9 @@ function TopbarMeta() {
         <a href="#test">FAQ</a>
       </div>
 
-      <div className="topbar-meta-icon">
+      <div data-count="8" className="topbar-meta-icon">
         <svg
+          className="topbar-meta-bell-icon"
           width="18"
           height="18"
           viewBox="0 0 18 18"

@@ -18,7 +18,7 @@ body {
 }
 
 .topbar-meta > * {
-  @apply p-2 m-2;
+  @apply p-2 m-2 relative;
 }
 
 .topbar-meta-user {
@@ -32,6 +32,22 @@ body {
   @apply text-right;
   font-size: 0.75rem;
   line-height: 0.5;
+}
+
+/* .topbar-meta-bell-icon {
+  @apply relative;
+} */
+
+.topbar-meta-icon:before {
+  @apply absolute text-white text-sm text-center;
+  content: attr(data-count);
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #1860ec;
+  right: 5px;
+  font-size: 10px;
+  top: 3px;
 }
 
 .avatar-image {

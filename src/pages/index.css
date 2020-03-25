@@ -623,6 +623,7 @@ body {
 .topbar-meta > * {
   padding: 0.5rem;
   margin: 0.5rem;
+  position: relative;
 }
 
 .topbar-meta-user {
@@ -637,6 +638,25 @@ body {
   text-align: right;
   font-size: 0.75rem;
   line-height: 0.5;
+}
+
+/* .topbar-meta-bell-icon {
+  @apply relative;
+} */
+
+.topbar-meta-icon:before {
+  position: absolute;
+  color: #fff;
+  font-size: 0.875rem;
+  text-align: center;
+  content: attr(data-count);
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #1860ec;
+  right: 5px;
+  font-size: 10px;
+  top: 3px;
 }
 
 .avatar-image {
