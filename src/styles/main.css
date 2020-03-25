@@ -1,5 +1,9 @@
 @tailwind base;
 
+body {
+  color: "#647787";
+}
+
 .top-bar {
   @apply fixed flex w-full flex bg-gray-100;
   height: 60px;
@@ -15,6 +19,23 @@
 
 .topbar-meta > * {
   @apply p-2 m-2;
+}
+
+.topbar-meta-user {
+  @apply flex;
+}
+.topbar-meta-user-info {
+  @apply mr-2;
+}
+
+.topbar-meta-user-greeting {
+  @apply text-right;
+  font-size: 0.75rem;
+  line-height: 0.5;
+}
+
+.avatar-image {
+  border-radius: 100%;
 }
 
 .app-logo {

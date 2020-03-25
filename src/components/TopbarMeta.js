@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "./image"
 
 function TopbarMeta() {
   return (
@@ -43,12 +44,12 @@ function TopbarMeta() {
         </svg>
       </div>
       <div className="topbar-meta-user">
-        <div className="user-name">
-          <div className="greeting">Hello</div>
-          <div className="name">Oluwaleke Ojo</div>
+        <div className="topbar-meta-user-info">
+          <div className="topbar-meta-user-greeting">Hello</div>
+          <div className="topbar-meta-user-name">Oluwaleke Ojo</div>
         </div>
-        <div className="user-avatar">
-          <img className="img img-responsive" href="./" alt="Oluwaleke Ojo" />
+        <div className="topbar-meta-user-avatar">
+          <Image name="avatar.png" />
         </div>
       </div>
     </div>
