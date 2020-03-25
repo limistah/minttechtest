@@ -2,6 +2,7 @@ import React from "react"
 import Logo from "../components/Logo"
 import Searchbar from "../components/Searchbar"
 import TopbarMeta from "../components/TopbarMeta"
+import SidebarNav from "../components/SidebarNav"
 
 function Main() {
   return (
@@ -21,6 +22,7 @@ function Main() {
                 Generate Invoice
               </a>
             </div>
+            <SidebarNav />
           </div>
         </div>
         <div class="content-section"></div>

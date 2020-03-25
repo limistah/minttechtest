@@ -106,11 +106,52 @@ body {
 }
 
 .sidebar-container {
-  @apply flex;
+  @apply flex flex-wrap;
 }
 
 .sidebar-action-button-container {
   @apply px-2 py-3 my-3 text-center w-full;
+}
+
+.sidebar-nav-container {
+  @apply w-full flex flex-wrap;
+}
+
+.sidebar-nav-item {
+  @apply w-full relative px-3 py-3 flex;
+  overflow: hidden;
+  transition: padding background-color 0.3s;
+}
+
+.sidebar-nav-item::before {
+  @apply bg-gray-500 absolute;
+  content: "";
+  width: 0px;
+  transition: width 0.3s;
+
+  /* background-color: ; */
+  /* position: relative; */
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.sidebar-nav-item:hover {
+  @apply bg-gray-100 pl-5;
+  cursor: pointer;
+}
+
+.sidebar-nav-item:hover::before {
+  width: 3px;
+}
+
+.sidebar-nav-item-icon {
+  @apply w-2/12;
+}
+
+.sidebar-nav-item-link {
+  @apply w-10/12;
+  font-size: 11px;
 }
 
 .content-section {
