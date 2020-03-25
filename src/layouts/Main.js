@@ -1,6 +1,7 @@
 import React from "react"
 import Logo from "../components/Logo"
 import Searchbar from "../components/Searchbar"
+import TopbarMeta from "../components/TopbarMeta"
 
 function Main() {
   return (
@@ -9,6 +10,7 @@ function Main() {
         <Logo />
         <div className="top-bar-container">
           <Searchbar />
+          <TopbarMeta />
         </div>
       </div>
       <div className="app-container">
