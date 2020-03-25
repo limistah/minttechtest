@@ -9,6 +9,14 @@
   @apply w-full px-3 flex justify-between;
 }
 
+.topbar-meta {
+  @apply flex;
+}
+
+.topbar-meta > * {
+  @apply p-2 m-2;
+}
+
 .app-logo {
   @apply flex-grow-0 text-3xl font-bold py-3 text-center;
   color: #1875f0;

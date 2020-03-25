@@ -612,6 +612,15 @@ video {
   justify-content: space-between;
 }
 
+.topbar-meta {
+  display: flex;
+}
+
+.topbar-meta > * {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
 .app-logo {
   flex-grow: 0;
   font-size: 1.875rem;
