@@ -12,6 +12,7 @@
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   display: flex;
+  justify-content: space-between;
 }
 
 .app-logo {
@@ -33,6 +34,7 @@
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   position: relative;
+  flex-grow: 1;
 }
 
 .app-searchbar-icon {

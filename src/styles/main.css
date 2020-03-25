@@ -4,7 +4,7 @@
 }
 
 .top-bar-container {
-  @apply w-full px-3 flex;
+  @apply w-full px-3 flex justify-between;
 }
 
 .app-logo {
@@ -14,7 +14,7 @@
 }
 
 .app-searchbar {
-  @apply w-1/4 h-full m-0 p-0 py-3 relative;
+  @apply w-1/4 h-full m-0 p-0 py-3 relative flex-grow;
 }
 
 .app-searchbar-icon {
