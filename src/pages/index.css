@@ -595,6 +595,8 @@ video {
   height: auto;
 }
 
+/* @tailwind utilities; */
+
 body {
   color: "#647787";
 }
@@ -718,10 +720,38 @@ body {
 
 .sidebar {
   flex-grow: 0;
-  background-color: #cbd5e0;
   width: 256px;
   min-height: calc(100vh - 60px);
   max-height: 1100px;
+}
+
+.btn {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-radius: 9999px;
+  font-weight: 700;
+}
+
+.btn-green {
+  color: #f7fafc;
+  background-color: #27ae60;
+}
+
+.sidebar-container {
+  display: flex;
+}
+
+.sidebar-action-button-container {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  width: 100%;
 }
 
 .content-section {

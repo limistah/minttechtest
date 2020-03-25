@@ -1,4 +1,5 @@
 @tailwind base;
+/* @tailwind utilities; */
 
 body {
   color: "#647787";
@@ -89,10 +90,27 @@ body {
 }
 
 .sidebar {
-  @apply flex-grow-0 bg-gray-400;
+  @apply flex-grow-0;
   width: 256px;
   min-height: calc(100vh - 60px);
   max-height: 1100px;
+}
+
+.btn {
+  @apply px-3 py-2 rounded-full font-bold;
+}
+
+.btn-green {
+  @apply text-gray-100;
+  background-color: #27ae60;
+}
+
+.sidebar-container {
+  @apply flex;
+}
+
+.sidebar-action-button-container {
+  @apply px-2 py-3 my-3 text-center w-full;
 }
 
 .content-section {
