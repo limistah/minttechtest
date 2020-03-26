@@ -110,6 +110,48 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+
+      <div className="payments-table">
+        <h2 className="payments-title">Payments</h2>
+        <div className="payments-table-controls">
+          <div className="payments-table-control-showing">
+            <span>Showing</span>
+            <span className="payments-table-control-showing-form">
+              <form>
+                <select className="showing-select">
+                  <option>10</option>
+                  <option>20</option>
+                  <option>30</option>
+                </select>
+              </form>
+            </span>
+            <span>Out of 500 payments</span>
+          </div>
+          <div className="payments-table-control-search-form">
+            <form>
+              <input
+                type="form"
+                className="payments-table-search-input"
+                placeholder="search payments"
+              />
+            </form>
+          </div>
+          <div className="payments-table-control-filter">
+            <span>Show</span>
+            <span className="payments-table-control-filter-form">
+              <form>
+                <select className="showing-select">
+                  <option selected>All</option>
+                  <option>Reconcilled</option>
+                  <option>Un-reconcilled</option>
+                  <option>Settled</option>
+                  <option>Cancelled</option>
+                </select>
+              </form>
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </MainLayout>
 )
