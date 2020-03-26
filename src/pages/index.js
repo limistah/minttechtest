@@ -228,6 +228,29 @@ const IndexPage = () => (
             })}
           </tbody>
         </table>
+        <div className="payment-table-navigation">
+          <div className="payment-table-navigation-info">
+            Showing 1 to 10 of 100
+          </div>
+          <div className="payment-table-navigation-buttons">
+            <a className="payment-table-navigation-button" href="#/">
+              Previous
+            </a>
+            <a
+              className="payment-table-navigation-button payment-table-navigation-active-button"
+              href="#/"
+            >
+              1
+            </a>
+
+            <a className="payment-table-navigation-button" href="#/">
+              2
+            </a>
+            <a className="payment-table-navigation-button" href="#/">
+              Next
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </MainLayout>

@@ -370,7 +370,7 @@ info-box-value {
 }
 
 .payments-table-data {
-  @apply table-auto;
+  @apply table-auto my-5;
 }
 
 .payment-table-head,
@@ -444,4 +444,22 @@ info-box-value {
 
 .payments-table-status-badge.pending:after {
   background-color: #ebc315;
+}
+
+.payment-table-navigation {
+  @apply flex my-5 justify-between;
+}
+
+.payment-table-navigation-button {
+  @apply border p-3 border-blue-300 border-r-0 text-gray-500;
+  transition: background-color color 2s;
+}
+
+.payment-table-navigation-active-button,
+.payment-table-navigation-button:hover {
+  @apply bg-blue-500 text-gray-100;
+}
+
+.payment-table-navigation-button:last-of-type {
+  @apply border-r;
 }

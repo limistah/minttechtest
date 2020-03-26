@@ -1089,6 +1089,8 @@ info-box-value {
 
 .payments-table-data {
   table-layout: auto;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .payment-table-head,
@@ -1177,4 +1179,30 @@ info-box-value {
 
 .payments-table-status-badge.pending:after {
   background-color: #ebc315;
+}
+
+.payment-table-navigation {
+  display: flex;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  justify-content: space-between;
+}
+
+.payment-table-navigation-button {
+  border-width: 1px;
+  padding: 0.75rem;
+  border-color: #90cdf4;
+  border-right-width: 0;
+  color: #a0aec0;
+  transition: background-color color 2s;
+}
+
+.payment-table-navigation-active-button,
+.payment-table-navigation-button:hover {
+  background-color: #4299e1;
+  color: #f7fafc;
+}
+
+.payment-table-navigation-button:last-of-type {
+  border-right-width: 1px;
 }
