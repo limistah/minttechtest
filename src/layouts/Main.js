@@ -4,7 +4,7 @@ import Searchbar from "../components/Searchbar"
 import TopbarMeta from "../components/TopbarMeta"
 import SidebarNav from "../components/SidebarNav"
 
-function Main() {
+function Main({ children }) {
   return (
     <>
       <div className="top-bar">
@@ -25,7 +25,7 @@ function Main() {
             <SidebarNav />
           </div>
         </div>
-        <div class="content-section"></div>
+        <div class="content-section">{children}</div>
       </div>
     </>
   )
