@@ -1,7 +1,70 @@
 import React from "react"
 import "./index.css"
-
+import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts"
 import MainLayout from "../layouts/Main"
+
+const data = [
+  {
+    name: "Page A",
+    uv: 4000,
+    pv: 2400,
+    amt: 2400,
+  },
+  {
+    name: "Page B",
+    uv: 3000,
+    pv: 1398,
+    amt: 2210,
+  },
+  {
+    name: "Page C",
+    uv: 2000,
+    pv: 9800,
+    amt: 2290,
+  },
+  {
+    name: "Page D",
+    uv: 2780,
+    pv: 3908,
+    amt: 2000,
+  },
+  {
+    name: "Page E",
+    uv: 1890,
+    pv: 4800,
+    amt: 2181,
+  },
+  {
+    name: "Page F",
+    uv: 2390,
+    pv: 3800,
+    amt: 2500,
+  },
+  {
+    name: "Page G",
+    uv: 3490,
+    pv: 4300,
+    amt: 2100,
+  },
+]
+
+const InfoBoxChart = () => {
+  return (
+    <AreaChart
+      width={120}
+      height={60}
+      data={data}
+      margin={{
+        top: 5,
+        right: 0,
+        left: 0,
+        bottom: 5,
+      }}
+    >
+      <Area type="monotone" dataKey="uv" stroke="#8884d8" fill="#8884d8" />
+    </AreaChart>
+  )
+}
 
 const payments = [
   {
@@ -37,14 +100,18 @@ const IndexPage = () => (
               <span className="info-box-title">Daily Transaction Volume</span>
               <span className="info-box-value">2,342</span>
             </div>
-            <div className="chart"></div>
+            <div className="chart">
+              <InfoBoxChart />
+            </div>
           </div>
           <div className="info-box">
             <div className="info">
               <span className="info-box-title">Daily Transaction Value</span>
               <span className="info-box-value">4,000,000</span>
             </div>
-            <div className="chart"></div>
+            <div className="chart">
+              <InfoBoxChart />
+            </div>
           </div>
         </div>
         <div className="info-box-section">
@@ -53,14 +120,18 @@ const IndexPage = () => (
               <span className="info-box-title">Total Transaction Value</span>
               <span className="info-box-value">2,342</span>
             </div>
-            <div className="chart"></div>
+            <div className="chart">
+              <InfoBoxChart />
+            </div>
           </div>
           <div className="info-box">
             <div className="info">
               <span className="info-box-title">Total Transaction Volume</span>
               <span className="info-box-value">4,000,000</span>
             </div>
-            <div className="chart"></div>
+            <div className="chart">
+              <InfoBoxChart />
+            </div>
           </div>
         </div>
       </div>
@@ -82,7 +153,45 @@ const IndexPage = () => (
               <div className="graph-control graph-control-forward"> > </div>
             </div>
           </div>
-          <div className="graph">Graph goes in here</div>
+          <div className="graph">
+            <AreaChart
+              width={600}
+              height={200}
+              data={data}
+              margin={{
+                top: 10,
+                right: 30,
+                left: 0,
+                bottom: 0,
+              }}
+            >
+              {/* <CartesianGrid strokeDasharray="3 3" /> */}
+              <XAxis dataKey="name" />
+              <YAxis />
+              <Tooltip />
+              <Area
+                type="monotone"
+                dataKey="uv"
+                stackId="1"
+                stroke="#8884d8"
+                fill="#8884d8"
+              />
+              <Area
+                type="monotone"
+                dataKey="pv"
+                stackId="1"
+                stroke="#82ca9d"
+                fill="#82ca9d"
+              />
+              <Area
+                type="monotone"
+                dataKey="amt"
+                stackId="1"
+                stroke="#ffc658"
+                fill="#ffc658"
+              />
+            </AreaChart>
+          </div>
         </div>
         <div className="insight-container">
           <div className="insight">

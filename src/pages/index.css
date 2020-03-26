@@ -911,10 +911,6 @@ info-box-value {
   display: flex;
 }
 
-.graph {
-  /* @apply w-full; */
-}
-
 .graph-container {
   display: flex;
   flex-wrap: wrap;
@@ -956,7 +952,9 @@ info-box-value {
 }
 
 .graph {
-  height: 1.25rem;
+  margin-top: 1.25rem;
+  height: -0.75rem;
+  /* margin-top: 15px; */
 }
 
 .insight {

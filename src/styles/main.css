@@ -234,10 +234,6 @@ info-box-value {
   @apply flex;
 }
 
-.graph {
-  /* @apply w-full; */
-}
-
 .graph-container {
   @apply flex flex-wrap bg-gray-100 rounded shadow p-3;
   width: 65.66667%;
@@ -263,7 +259,10 @@ info-box-value {
   @apply p-2 rounded bg-gray-200 border;
 }
 .graph {
-  @apply h-5;
+  @apply mt-5;
+  height: -0.75rem;
+
+  /* margin-top: 15px; */
 }
 
 .insight {
