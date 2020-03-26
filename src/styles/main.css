@@ -212,3 +212,112 @@ info-box-value {
   @apply font-bold;
   font-size: 18px;
 }
+
+.graph-insight-container {
+  @apply mt-5 rounded shadow;
+}
+.graph-insight-container,
+.graph-controls-container {
+  @apply flex w-full justify-between flex-wrap;
+}
+
+.graph-controls-container {
+  @apply h-2;
+}
+
+.graph-date {
+  @apply w-2/5 font-bold;
+}
+
+.graph-controls {
+  @apply flex;
+}
+
+.graph {
+  /* @apply w-full; */
+}
+
+.graph-container {
+  @apply flex flex-wrap bg-gray-100 rounded shadow p-3;
+  width: 65.66667%;
+  margin-right: 0.3%;
+}
+
+.insight-container {
+  @apply w-2/6;
+}
+
+.graph-control {
+  @apply px-3 pt-2 mx-2 rounded bg-gray-200;
+  font-weight: small;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.graph-control::hover {
+  @apply bg-gray-400 shadow;
+}
+
+.graph-controls select {
+  @apply p-2 rounded bg-gray-200 border;
+}
+.graph {
+  @apply h-5;
+}
+
+.insight {
+  @apply w-full p-3 border-b shadow bg-gray-100 mb-1 rounded;
+}
+
+.insight:last-of-type {
+  @apply mb-0;
+}
+
+.insight-title {
+  @apply font-bold;
+}
+
+.insight-progress {
+  @apply relative block w-full my-3 mb-5;
+}
+
+.insight-progress::after,
+.insight-progress::before {
+  @apply absolute h-2 w-full;
+  content: " ";
+  background: red;
+  top: -10px;
+}
+
+.insight-progress::before {
+  @apply w-4/5;
+  background-color: #27ae60;
+  left: 0px;
+}
+
+.insight-progress::after {
+  @apply w-1/5;
+  background-color: #fdc203;
+  right: 0px;
+}
+
+.insight-info {
+  @apply mb-1;
+  font-size: 14px;
+}
+
+.insight-info-text {
+  @apply font-bold;
+}
+
+.insight-info-text-yellow {
+  color: #fdc203;
+}
+
+.insight-info-text-blue {
+  color: #1860ec;
+}
+
+.insight-info-text-green {
+  color: #27ae60;
+}

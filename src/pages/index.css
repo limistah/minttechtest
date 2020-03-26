@@ -882,3 +882,148 @@ info-box-value {
   font-weight: 700;
   font-size: 18px;
 }
+
+.graph-insight-container {
+  margin-top: 1.25rem;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.graph-insight-container,
+.graph-controls-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.graph-controls-container {
+  height: 0.5rem;
+}
+
+.graph-date {
+  width: 40%;
+  font-weight: 700;
+}
+
+.graph-controls {
+  display: flex;
+}
+
+.graph {
+  /* @apply w-full; */
+}
+
+.graph-container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f7fafc;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 0.75rem;
+  width: 65.66667%;
+  margin-right: 0.3%;
+}
+
+.insight-container {
+  width: 33.333333%;
+}
+
+.graph-control {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #edf2f7;
+  font-weight: small;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.graph-control::hover {
+  background-color: #cbd5e0;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+.graph-controls select {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #edf2f7;
+  border-width: 1px;
+}
+
+.graph {
+  height: 1.25rem;
+}
+
+.insight {
+  width: 100%;
+  padding: 0.75rem;
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  background-color: #f7fafc;
+  margin-bottom: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.insight:last-of-type {
+  margin-bottom: 0;
+}
+
+.insight-title {
+  font-weight: 700;
+}
+
+.insight-progress {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.insight-progress::after,
+.insight-progress::before {
+  position: absolute;
+  height: 0.5rem;
+  width: 100%;
+  content: " ";
+  background: red;
+  top: -10px;
+}
+
+.insight-progress::before {
+  width: 80%;
+  background-color: #27ae60;
+  left: 0px;
+}
+
+.insight-progress::after {
+  width: 20%;
+  background-color: #fdc203;
+  right: 0px;
+}
+
+.insight-info {
+  margin-bottom: 0.25rem;
+  font-size: 14px;
+}
+
+.insight-info-text {
+  font-weight: 700;
+}
+
+.insight-info-text-yellow {
+  color: #fdc203;
+}
+
+.insight-info-text-blue {
+  color: #1860ec;
+}
+
+.insight-info-text-green {
+  color: #27ae60;
+}

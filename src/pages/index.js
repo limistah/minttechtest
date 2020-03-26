@@ -40,6 +40,76 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+      <div className="graph-insight-container">
+        <div className="graph-container">
+          <div className="graph-controls-container">
+            <div className="graph-date">Today: 5 August, 2018</div>
+            <div className="graph-controls">
+              <form>
+                <select>
+                  <option>1 Jan - 1 Jun</option>
+                  <option>30 Jan - 31 Dec</option>
+                </select>
+              </form>
+              <div className="graph-control graph-control-backward">
+                {" "}
+                {"<"}{" "}
+              </div>
+              <div className="graph-control graph-control-forward"> > </div>
+            </div>
+          </div>
+          <div className="graph">Graph goes in here</div>
+        </div>
+        <div className="insight-container">
+          <div className="insight">
+            <div className="insight-title">Orders</div>
+            <span className="insight-progress"></span>
+            <div className="insight-info">
+              <span className="insight-info-title">Pending Orders:</span>
+              <span className="insight-info-text insight-info-text-yellow">
+                20
+              </span>
+            </div>
+            <div className="insight-info">
+              <span className="insight-info-title">Reconcilled Orderr:</span>
+              <span className="insight-info-text insight-info-text-green">
+                80
+              </span>
+            </div>
+
+            <div className="insight-info">
+              <span className="insight-info-title">Total Orders:</span>
+              <span className="insight-info-text insight-info-text-blue">
+                100
+              </span>
+            </div>
+          </div>
+
+          <div className="insight">
+            <div className="insight-title">Orders</div>
+            <span className="insight-progress"></span>
+            <div className="insight-info">
+              <span className="insight-info-title">Pending Orders:</span>
+              <span className="insight-info-text insight-info-text-yellow">
+                20
+              </span>
+            </div>
+            <div className="insight-info">
+              <span className="insight-info-title">Reconcilled Orderr:</span>
+              <span className="insight-info-text insight-info-text-green">
+                80
+              </span>
+            </div>
+
+            <div className="insight-info">
+              <span className="insight-info-title">Total Orders:</span>
+              <span className="insight-info-text insight-info-text-blue">
+                100
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </MainLayout>
 )
