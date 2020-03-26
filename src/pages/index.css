@@ -606,7 +606,7 @@ body {
   display: flex;
   width: 100%;
   display: flex;
-  background-color: #f7fafc;
+  background-color: #fff;
   height: 60px;
   box-shadow: 0px -1px 2px 2px #e5e5e5;
   z-index: 1200;
@@ -738,7 +738,7 @@ body {
 }
 
 .btn-green {
-  color: #f7fafc;
+  color: #fff;
   background-color: #27ae60;
 }
 
@@ -802,7 +802,7 @@ body {
 }
 
 .sidebar-nav-item:hover {
-  background-color: #f7fafc;
+  background-color: #fff;
   padding-left: 1.25rem;
   cursor: pointer;
 }
@@ -850,7 +850,7 @@ body {
 
 .info-box {
   width: 50%;
-  background-color: #f7fafc;
+  background-color: #fff;
   padding: 0.75rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -914,7 +914,7 @@ info-box-value {
 .graph-container {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f7fafc;
+  background-color: #fff;
   border-radius: 0.25rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   padding: 0.75rem;
@@ -962,7 +962,7 @@ info-box-value {
   padding: 0.75rem;
   border-bottom-width: 1px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  background-color: #f7fafc;
+  background-color: #fff;
   margin-bottom: 0.25rem;
   border-radius: 0.25rem;
 }
@@ -1031,7 +1031,7 @@ info-box-value {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   width: 100%;
-  background-color: #f7fafc;
+  background-color: #fff;
   border-radius: 0.25rem;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   padding: 0.75rem;
@@ -1086,6 +1086,34 @@ info-box-value {
   width: 33.333333%;
 }
 
+.payments-table-type-initials {
+  position: relative;
+  margin: 0.75rem;
+  background-color: transparent;
+  font-size: 1.875rem;
+  /* z-index: 100; */
+  width: 60px;
+}
+
+.payments-table-type-initials .initials {
+  z-index: 1200;
+  display: block;
+  position: absolute;
+  left: 7px;
+  top: 3px;
+}
+
+.circle {
+  left: 0;
+  top: -6px;
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  border-radius: 9999px;
+  background-color: #a0aec0;
+}
+
 .payments-table-control-search-form .app-searchbar {
   width: 100%;
   padding: 0;
@@ -1116,9 +1144,13 @@ info-box-value {
   text-align: left;
 }
 
+.payments-table-type .type {
+  padding-left: 50px;
+}
+
 .payments-table-type,
 .payment-table-head-type {
-  width: 33.333333%;
+  width: 41.666667%;
 }
 
 .payments-table-price,
@@ -1138,7 +1170,7 @@ info-box-value {
 
 .payments-table-status,
 .payment-table-head-status {
-  width: 25%;
+  width: 16.666667%;
 }
 
 .payments-table-data-row {
@@ -1213,7 +1245,7 @@ info-box-value {
 .payment-table-navigation-active-button,
 .payment-table-navigation-button:hover {
   background-color: #4299e1;
-  color: #f7fafc;
+  color: #fff;
 }
 
 .payment-table-navigation-button:last-of-type {

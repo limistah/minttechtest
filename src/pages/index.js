@@ -321,7 +321,13 @@ const IndexPage = () => (
             {payments.map(payment => {
               return (
                 <tr className="payments-table-data-row">
-                  <td className="payments-table-type">{payment.type}</td>
+                  <td className="payments-table-type">
+                    <span className="payments-table-type-initials">
+                      <span className="circle"></span>
+                      <span className="initials">VW</span>
+                    </span>
+                    <span className="type">{payment.type}</span>
+                  </td>
                   <td className="payments-table-price">{payment.price}</td>
                   <td className="payments-table-id">{payment.trasactionId}</td>
                   <td className="payments-table-date">{payment.date}</td>

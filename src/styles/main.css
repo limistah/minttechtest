@@ -6,7 +6,7 @@ body {
 }
 
 .top-bar {
-  @apply fixed flex w-full flex bg-gray-100;
+  @apply fixed flex w-full flex bg-white;
   height: 60px;
   box-shadow: 0px -1px 2px 2px #e5e5e5;
   z-index: 1200;
@@ -104,7 +104,7 @@ body {
 }
 
 .btn-green {
-  @apply text-gray-100;
+  @apply text-white;
   background-color: #27ae60;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .sidebar-nav-item:hover {
-  @apply bg-gray-100 pl-5;
+  @apply bg-white pl-5;
   cursor: pointer;
 }
 
@@ -187,7 +187,7 @@ body {
 }
 
 .info-box {
-  @apply w-1/2 bg-gray-100 p-3 my-2 rounded shadow;
+  @apply w-1/2 bg-white p-3 my-2 rounded shadow;
   transform: margin background-color 0.1s;
 }
 
@@ -235,7 +235,7 @@ info-box-value {
 }
 
 .graph-container {
-  @apply flex flex-wrap bg-gray-100 rounded shadow p-3;
+  @apply flex flex-wrap bg-white rounded shadow p-3;
   width: 65.66667%;
   margin-right: 0.3%;
 }
@@ -266,7 +266,7 @@ info-box-value {
 }
 
 .insight {
-  @apply w-full p-3 border-b shadow bg-gray-100 mb-1 rounded;
+  @apply w-full p-3 border-b shadow bg-white mb-1 rounded;
 }
 
 .insight:last-of-type {
@@ -323,7 +323,7 @@ info-box-value {
 }
 
 .payments-table {
-  @apply my-3 w-full bg-gray-100 rounded shadow p-3;
+  @apply my-3 w-full bg-white rounded shadow p-3;
 }
 
 .payments-title {
@@ -364,6 +364,25 @@ info-box-value {
   @apply w-1/3;
 }
 
+.payments-table-type-initials {
+  @apply relative m-3 bg-transparent text-3xl;
+  /* z-index: 100; */
+  width: 60px;
+}
+.payments-table-type-initials .initials {
+  z-index: 1200;
+  @apply block absolute;
+  left: 7px;
+  top: 3px;
+}
+.circle {
+  left: 0;
+  top: -6px;
+  width: 60px;
+  height: 60px;
+  @apply block absolute rounded-full bg-gray-500;
+}
+
 .payments-table-control-search-form .app-searchbar {
   @apply w-full p-0;
 }
@@ -385,9 +404,13 @@ info-box-value {
   @apply px-4 py-5 text-left;
 }
 
+.payments-table-type .type {
+  padding-left: 50px;
+}
+
 .payments-table-type,
 .payment-table-head-type {
-  @apply w-4/12;
+  @apply w-5/12;
 }
 
 .payments-table-price,
@@ -407,7 +430,7 @@ info-box-value {
 
 .payments-table-status,
 .payment-table-head-status {
-  @apply w-3/12;
+  @apply w-2/12;
 }
 
 .payments-table-data-row {
@@ -461,7 +484,7 @@ info-box-value {
 
 .payment-table-navigation-active-button,
 .payment-table-navigation-button:hover {
-  @apply bg-blue-500 text-gray-100;
+  @apply bg-blue-500 text-white;
 }
 
 .payment-table-navigation-button:last-of-type {
