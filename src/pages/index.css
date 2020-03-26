@@ -1027,3 +1027,35 @@ info-box-value {
 .insight-info-text-green {
   color: #27ae60;
 }
+
+.payments-table {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  width: 100%;
+}
+
+.payments-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  justify-content: space-between;
+}
+
+.payments-table-controls {
+  display: flex;
+  width: 100%;
+}
+
+.payments-table-control-showing {
+  width: 33.333333%;
+  display: flex;
+  text-align: left;
+  font-size: 14px;
+}
+
+.payments-table-control-showing-form {
+  width: 8.333333%;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  display: block;
+  /* width: 20%; */
+}
