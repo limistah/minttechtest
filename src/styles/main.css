@@ -95,6 +95,7 @@ body {
   width: 256px;
   min-height: calc(100vh - 60px);
   max-height: 1100px;
+  box-shadow: inset -2px -6px 4px -2px #e5e5e5;
 }
 
 .btn {
@@ -198,11 +199,16 @@ body {
 }
 
 .info-box-title,
-info-box-value {
+.info-box-value {
   display: block;
-  font-size: 12px;
+}
+
+.info-box-title {
+  color: #787c90;
+  font-size: 11px;
 }
 
 info-box-value {
   @apply font-bold;
+  font-size: 18px;
 }
