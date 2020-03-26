@@ -3,6 +3,30 @@ import "./index.css"
 
 import MainLayout from "../layouts/Main"
 
+const payments = [
+  {
+    type: 'Apple Mac Book 15" 250 SSD 12 GB',
+    price: "$73430",
+    trasactionId: "1234567890",
+    date: "12:30",
+    status: "reconciled",
+  },
+  {
+    type: 'Apple Mac Book 15" 250 SSD 12 GB',
+    price: "$73430",
+    trasactionId: "1234567890",
+    date: "12:30",
+    status: "pending",
+  },
+  {
+    type: 'Apple Mac Book 15" 250 SSD 12 GB',
+    price: "$73430",
+    trasactionId: "1234567890",
+    date: "12:30",
+    status: "unreconcilled",
+  },
+]
+
 const IndexPage = () => (
   <MainLayout>
     <div className="main-content-container">
@@ -151,20 +175,59 @@ const IndexPage = () => (
             </form>
           </div>
           <div className="payments-table-control-filter">
-            <span>Show</span>
-            <span className="payments-table-control-filter-form">
-              <form>
-                <select className="showing-select">
-                  <option selected>All</option>
-                  <option>Reconcilled</option>
-                  <option>Un-reconcilled</option>
-                  <option>Settled</option>
-                  <option>Cancelled</option>
-                </select>
-              </form>
-            </span>
+            <div>Show</div>
+            <form className="payments-table-control-filter-form">
+              <select className="showing-select">
+                <option selected>All</option>
+                <option>Reconcilled</option>
+                <option>Un-reconcilled</option>
+                <option>Settled</option>
+                <option>Cancelled</option>
+              </select>
+            </form>
           </div>
         </div>
+
+        <table className="payments-table-data">
+          <thead>
+            <tr className="">
+              <th className="payment-table-head payment-table-head-type">
+                Item Type
+              </th>
+              <th className="payment-table-head payment-table-head-price">
+                Price
+              </th>
+              <th className="payment-table-head payment-table-head-id">
+                Transaction No
+              </th>
+              <th className="payment-table-head payment-table-head-date">
+                Date
+              </th>
+              <th className="payment-table-head payment-table-head-status">
+                Status
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {payments.map(payment => {
+              return (
+                <tr className="payments-table-data-row">
+                  <td className="payments-table-type">{payment.type}</td>
+                  <td className="payments-table-price">{payment.price}</td>
+                  <td className="payments-table-id">{payment.trasactionId}</td>
+                  <td className="payments-table-date">{payment.date}</td>
+                  <td className="payments-table-status">
+                    <span
+                      className={`payments-table-status-badge ${payment.status}`}
+                    >
+                      {payment.status}
+                    </span>
+                  </td>
+                </tr>
+              )
+            })}
+          </tbody>
+        </table>
       </div>
     </div>
   </MainLayout>

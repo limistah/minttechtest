@@ -346,7 +346,6 @@ info-box-value {
 
 .payments-table-control-filter {
   @apply flex justify-end;
-  /* text-align: right; */
 }
 
 .payments-table-control-filter-form {
@@ -368,4 +367,81 @@ info-box-value {
 
 .payments-table-control-search-form .app-searchbar-icon {
   top: 8px;
+}
+
+.payments-table-data {
+  @apply table-auto;
+}
+
+.payment-table-head,
+.payments-table-type,
+.payments-table-id,
+.payments-table-date,
+.payments-table-price,
+.payments-table-status {
+  @apply px-4 py-2 text-left;
+}
+
+.payments-table-type,
+.payment-table-head-type {
+  @apply w-4/12;
+}
+
+.payments-table-price,
+.payment-table-head-price {
+  @apply w-2/12;
+}
+
+.payments-table-id,
+.payment-table-head-id {
+  @apply w-2/12;
+}
+
+.payments-table-date,
+.payment-table-head-date {
+  @apply w-2/12;
+}
+
+.payments-table-status,
+.payment-table-head-status {
+  @apply w-3/12;
+}
+
+.payments-table-data-row {
+  @apply my-3 border border-b;
+  border-bottom-color: #eeeeee;
+}
+
+.payments-table-status-badge {
+  @apply relative rounded-full bg-transparent p-2 pl-5 border capitalize;
+  color: #7f8fa4;
+  border-color: #7f8fa4;
+}
+
+.payments-table-status-badge:after {
+  @apply absolute rounded-full bg-gray-500;
+  background-color: #7f8fa4;
+  content: " ";
+  left: 7px;
+  top: 13px;
+  width: 10px;
+  height: 10px;
+}
+
+.payments-table-status-badge.reconciled {
+  color: #27ae60;
+  border-color: #27ae60;
+}
+
+.payments-table-status-badge.reconciled:after {
+  background-color: #27ae60;
+}
+
+.payments-table-status-badge.pending {
+  color: #ebc315;
+  border-color: #ebc315;
+}
+
+.payments-table-status-badge.pending:after {
+  background-color: #ebc315;
 }

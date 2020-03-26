@@ -609,6 +609,7 @@ body {
   background-color: #f7fafc;
   height: 60px;
   box-shadow: 0px -1px 2px 2px #e5e5e5;
+  z-index: 1200;
 }
 
 .top-bar-container {
@@ -1062,7 +1063,6 @@ info-box-value {
 .payments-table-control-filter {
   display: flex;
   justify-content: flex-end;
-  /* text-align: right; */
 }
 
 .payments-table-control-filter-form {
@@ -1085,4 +1085,96 @@ info-box-value {
 
 .payments-table-control-search-form .app-searchbar-icon {
   top: 8px;
+}
+
+.payments-table-data {
+  table-layout: auto;
+}
+
+.payment-table-head,
+.payments-table-type,
+.payments-table-id,
+.payments-table-date,
+.payments-table-price,
+.payments-table-status {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: left;
+}
+
+.payments-table-type,
+.payment-table-head-type {
+  width: 33.333333%;
+}
+
+.payments-table-price,
+.payment-table-head-price {
+  width: 16.666667%;
+}
+
+.payments-table-id,
+.payment-table-head-id {
+  width: 16.666667%;
+}
+
+.payments-table-date,
+.payment-table-head-date {
+  width: 16.666667%;
+}
+
+.payments-table-status,
+.payment-table-head-status {
+  width: 25%;
+}
+
+.payments-table-data-row {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-width: 1px;
+  border-bottom-width: 1px;
+  border-bottom-color: #eeeeee;
+}
+
+.payments-table-status-badge {
+  position: relative;
+  border-radius: 9999px;
+  background-color: transparent;
+  padding: 0.5rem;
+  padding-left: 1.25rem;
+  border-width: 1px;
+  text-transform: capitalize;
+  color: #7f8fa4;
+  border-color: #7f8fa4;
+}
+
+.payments-table-status-badge:after {
+  position: absolute;
+  border-radius: 9999px;
+  background-color: #a0aec0;
+  background-color: #7f8fa4;
+  content: " ";
+  left: 7px;
+  top: 13px;
+  width: 10px;
+  height: 10px;
+}
+
+.payments-table-status-badge.reconciled {
+  color: #27ae60;
+  border-color: #27ae60;
+}
+
+.payments-table-status-badge.reconciled:after {
+  background-color: #27ae60;
+}
+
+.payments-table-status-badge.pending {
+  color: #ebc315;
+  border-color: #ebc315;
+}
+
+.payments-table-status-badge.pending:after {
+  background-color: #ebc315;
 }
