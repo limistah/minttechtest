@@ -17,7 +17,7 @@ function Logo() {
         />
       </svg>
 
-      <input className="app-searchbar-input" type="text" placeholder="search" />
+      <input className="app-searchbar-input" type="text" placeholder="Search" />
     </form>
   )
 }

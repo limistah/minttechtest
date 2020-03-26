@@ -279,7 +279,7 @@ const IndexPage = () => (
               <input
                 className="app-searchbar-input"
                 type="text"
-                placeholder="search"
+                placeholder="Search"
               />
             </form>
           </div>

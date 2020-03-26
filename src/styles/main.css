@@ -167,8 +167,8 @@ body {
 
 .content-section {
   @apply flex-grow p-5;
+  background-color: #efefef;
   min-height: calc(100vh - 60px);
-  background-color: #e5e5e5;
   /* width: 256px; */
   overflow: hidden;
   width: calc(100vw - 256px);
@@ -323,7 +323,7 @@ info-box-value {
 }
 
 .payments-table {
-  @apply my-3 w-full;
+  @apply my-3 w-full bg-gray-100 rounded shadow p-3;
 }
 
 .payments-title {
@@ -344,7 +344,7 @@ info-box-value {
 }
 
 .payments-table-control-filter {
-  @apply flex justify-end;
+  @apply flex justify-end pl-5 w-2/5;
 }
 
 .payments-table-control-filter-form {
@@ -360,6 +360,10 @@ info-box-value {
   outline: 0;
 }
 
+.payments-table-control-search-form {
+  @apply w-1/3;
+}
+
 .payments-table-control-search-form .app-searchbar {
   @apply w-full p-0;
 }
@@ -369,7 +373,7 @@ info-box-value {
 }
 
 .payments-table-data {
-  @apply table-auto my-5;
+  @apply table-auto m-0 my-5 w-full;
 }
 
 .payment-table-head,
@@ -378,7 +382,7 @@ info-box-value {
 .payments-table-date,
 .payments-table-price,
 .payments-table-status {
-  @apply px-4 py-2 text-left;
+  @apply px-4 py-5 text-left;
 }
 
 .payments-table-type,
@@ -412,8 +416,9 @@ info-box-value {
 }
 
 .payments-table-status-badge {
-  @apply relative rounded-full bg-transparent p-2 pl-5 border capitalize;
+  @apply w-full block relative rounded-full bg-transparent p-2 pl-5 border capitalize;
   color: #7f8fa4;
+  padding-left: 2rem;
   border-color: #7f8fa4;
 }
 
@@ -421,8 +426,8 @@ info-box-value {
   @apply absolute rounded-full bg-gray-500;
   background-color: #7f8fa4;
   content: " ";
-  left: 7px;
-  top: 13px;
+  left: 17px;
+  top: 15px;
   width: 10px;
   height: 10px;
 }

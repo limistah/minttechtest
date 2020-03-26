@@ -823,8 +823,8 @@ body {
 .content-section {
   flex-grow: 1;
   padding: 1.25rem;
+  background-color: #efefef;
   min-height: calc(100vh - 60px);
-  background-color: #e5e5e5;
   /* width: 256px; */
   overflow: hidden;
   width: calc(100vw - 256px);
@@ -1031,6 +1031,10 @@ info-box-value {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
   width: 100%;
+  background-color: #f7fafc;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding: 0.75rem;
 }
 
 .payments-title {
@@ -1061,6 +1065,8 @@ info-box-value {
 .payments-table-control-filter {
   display: flex;
   justify-content: flex-end;
+  padding-left: 1.25rem;
+  width: 40%;
 }
 
 .payments-table-control-filter-form {
@@ -1076,6 +1082,10 @@ info-box-value {
   outline: 0;
 }
 
+.payments-table-control-search-form {
+  width: 33.333333%;
+}
+
 .payments-table-control-search-form .app-searchbar {
   width: 100%;
   padding: 0;
@@ -1087,8 +1097,10 @@ info-box-value {
 
 .payments-table-data {
   table-layout: auto;
+  margin: 0;
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
+  width: 100%;
 }
 
 .payment-table-head,
@@ -1099,8 +1111,8 @@ info-box-value {
 .payments-table-status {
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
   text-align: left;
 }
 
@@ -1138,6 +1150,8 @@ info-box-value {
 }
 
 .payments-table-status-badge {
+  width: 100%;
+  display: block;
   position: relative;
   border-radius: 9999px;
   background-color: transparent;
@@ -1146,6 +1160,7 @@ info-box-value {
   border-width: 1px;
   text-transform: capitalize;
   color: #7f8fa4;
+  padding-left: 2rem;
   border-color: #7f8fa4;
 }
 
@@ -1155,8 +1170,8 @@ info-box-value {
   background-color: #a0aec0;
   background-color: #7f8fa4;
   content: " ";
-  left: 7px;
-  top: 13px;
+  left: 17px;
+  top: 15px;
   width: 10px;
   height: 10px;
 }
