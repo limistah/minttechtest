@@ -1057,5 +1057,32 @@ info-box-value {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   display: block;
-  /* width: 20%; */
+}
+
+.payments-table-control-filter {
+  display: flex;
+  justify-content: flex-end;
+  /* text-align: right; */
+}
+
+.payments-table-control-filter-form {
+  margin-left: 0.5rem;
+}
+
+.payments-title select {
+  background-color: transparent;
+}
+
+.payments-table select:focus {
+  border-width: 0;
+  outline: 0;
+}
+
+.payments-table-control-search-form .app-searchbar {
+  width: 100%;
+  padding: 0;
+}
+
+.payments-table-control-search-form .app-searchbar-icon {
+  top: 8px;
 }
